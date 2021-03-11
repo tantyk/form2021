@@ -5,8 +5,145 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formularz</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <main></main>
+    <main class="main">
+      <h1>Formularz Próbny</h1>
+      <form method="post" action="https:\\dev.cotenfrontend.pl" class="form">
+        <p>
+          <label for="firstName"
+            >Imię:
+            <input
+              required
+              class="form__item"
+              type="text"
+              id="firstName"
+              name="firstName"
+              placeholder="Podaj imię"
+            />
+          </label>
+        </p>
+        <p>
+          <label for="lastName"
+            >Nazwisko:
+            <input
+              required
+              class="form__item"
+              type="text"
+              id="lastName"
+              name="lastName"
+              placeholder="Podaj nazwisko"
+            />
+          </label>
+        </p>
+        <p>
+          <label for="email"
+            >E-mail:
+            <input
+              required
+              class="form__item"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Podaj swój e-mail"
+            />
+          </label>
+        </p>
+        <p>
+          <label
+            >Poziom wkurwienia:
+            <input
+              class="form__item"
+              type="range"
+              id="range"
+              name="range"
+              min="0"
+              max="100"
+              step="5"
+            />
+          </label>
+        </p>
+        <fieldset>
+          <legend>Adres</legend>
+          <p>
+            <label for="cityName"
+              >Miasto:
+              <input
+                class="form__item"
+                type="text"
+                id="cityName"
+                name="cityName"
+                placeholder="Podaj nazwę miasta"
+              />
+            </label>
+          </p>
+          <p>
+            <label for="streetName"
+              >Ulica:
+              <input
+                class="form__item"
+                type="text"
+                id="streetName"
+                name="streetName"
+                placeholder="Podaj nazwę ulicy"
+              />
+            </label>
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Ulubiony samochód</legend>
+          <p>
+            <label>
+              <input type="radio" name="carName" value="alfa" />Alfa Romeo
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="radio" name="carName" value="opel" />Opel
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="radio" name="carName" value="toyota" />Toyota
+            </label>
+          </p>
+        </fieldset>
+        <p>
+          <label for="drink">Wybierz jeden:</label>
+          <select id="drink">
+            <option value="drink-1">Łyski + cola</option>
+            <option value="drink-2">Rum + cola</option>
+            <option value="drink-3">Wóda + cola</option>
+          </select>
+        </p>
+        <fieldset>
+          <legend>Twoje ulubione cipsy</legend>
+          <p>
+            <label>
+              <input type="checkbox" name="chipsName" value="fromage" />Fromagi
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                name="chipsName"
+                value="greenonion"
+              />Zielona cebulka
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                name="chipsName"
+                value="smokey"
+              />Wędzonka </label
+            ><label>
+              <input type="checkbox" name="chipsName" value="bacon" />Bekony
+            </label>
+          </p>
+        </fieldset>
+        <input name="send" type="submit" value="send" />
+      </form>
+    </main>
   </body>
 </html>
